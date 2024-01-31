@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('cf4ccd8643a85b1c099896262c10a691.jpg')
+}
+
+.bubble {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.kitten-gif {
+    width: 100px; /* Adjust the width as needed */
+    margin-top: 10px; /* Add some top margin */
+}
+
+.options-container {
+    display: flex;
+}
+
+.option {
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    height: 120px;
+    background-color: rgba(255, 77, 77, 0.8); /* Background color with some transparency */
+    border-radius: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#yesOption,
+#noOption {
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+#yesOption:hover,
+#noOption:hover {
+    transform: scale(1.2);
+}
+
+#yesSelect,
+#noSelect {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
